@@ -1,13 +1,8 @@
-# Sample Hardhat Project
+Here there is a ERC20 Token with EIP712 Cryptography standard. 
+You can make a signature with 3 values (address from, address to, uint256 amount) and send it to the contract
+If your signature is valid, the contract will send 'amount' of ERC20 token to address 'to' from the wallet, which signed a signature
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+this project has a script for making signatures and can call the deployed contract
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+to run the script use this
+npx hardhat run scripts/Signature.Maker.ts --network goerli
