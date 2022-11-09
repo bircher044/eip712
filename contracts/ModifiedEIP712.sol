@@ -28,7 +28,7 @@ contract modifiedEIP712 is EIP712, ERC20{
         from,
         to,
         amount
-       )));
+        )));
         address signerFromSignature = ECDSA.recover(digest, signature);
         pay(signerFromSignature, to, amount);
     }
