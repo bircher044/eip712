@@ -16,6 +16,11 @@ export default {
     },
     localhost: {
       chainId: 1337
+    },
+    mainnet: {
+      url: `https://eth.meowrpc.com`,
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 1
     }
   },
   etherscan: {
